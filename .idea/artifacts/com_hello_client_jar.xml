@@ -1,0 +1,10 @@
+<component name="ArtifactManager">
+  <artifact type="jar" build-on-make="true" name="com.hello.client:jar">
+    <output-path>$PROJECT_DIR$/out/artifacts/com_hello_client_jar</output-path>
+    <root id="archive" name="com.hello.client.jar">
+      <element id="module-output" name="com.hello.client" />
+      <element id="module-output" name="com.hello" />
+      <element id="module-output" name="com.hello.dep" />
+    </root>
+  </artifact>
+</component>
