@@ -18,10 +18,11 @@ jar -c -f output/mlib/helloclient.jar --main-class com.hello.client.HelloClient 
 /bin/rm -rf output/classes
 
 
-#java -p output/mlib -m com.hello.client.HelloClient
+
 java -p output/mlib -m com.hello.client/com.hello.client.HelloClient
 
 
+#Create custom JRE
 /bin/rm -rf helloclientimage/
 jlink --module-path /Library/Java/JavaVirtualMachines/jdk-9.0.4.jdk/Contents/Home/jmods:output/mlib --add-modules com.hello --add-modules com.hello.client --output helloclientimage --launcher=helloclient=com.hello.client
 
